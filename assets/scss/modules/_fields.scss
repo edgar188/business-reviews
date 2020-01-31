@@ -1,0 +1,35 @@
+input, textarea, select {
+    &.w-100 {
+        max-width: unset;
+        width: 100%;
+    }
+}
+
+// .field-primary {
+//     position: relative;
+//     height: 40px;
+//     font-size: 1em;
+//     background: none;
+//     z-index: $z-index-mid;
+//     border: $br-none;
+//     border-bottom: 1px solid rgba($color-text-primary, $opacity-secondary);
+//     &:focus, 
+//     &:valid {
+//         border-bottom: 2px solid rgba($color-text-primary, $opacity-secondary);
+//     }
+// }
+
+// .select-primary {
+//     position: relative;
+//     height: 40px;
+//     padding-left: 10px;
+//     background: none;
+//     font-size: 1em;
+//     font-family: $font-primary;
+//     color: $color-text-primary;
+//     border: $br-none;
+//     border-bottom: 1px solid rgba($color-text-primary, $opacity-secondary);
+//     &:valid {
+//         border-bottom: 1px solid rgba($color-text-primary, $opacity-secondary);
+//     }
+// }

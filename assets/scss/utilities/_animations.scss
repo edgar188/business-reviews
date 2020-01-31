@@ -1,0 +1,55 @@
+// Rotating bat in the footer section
+@keyframes bat-rotate {
+    0%   {transform: rotate(0deg);}
+    20%  {transform: rotate(-45deg);}
+    40%  {transform: rotate(45deg);}
+    60%  {transform: rotate(-90deg);}
+    80%  {transform: rotate(90deg);}
+    100% {transform: rotate(360deg);}
+}
+
+// Central bat in the aside section
+@keyframes bat-central-move {
+    from {
+        transform: translate(-50%, 0);
+    } to {
+        transform: translate(-50%, calc-val(30));
+    }
+}
+
+// Left bat in the aside section
+@keyframes bat-move-left {
+    0%   {top: 0; left: 0;}
+    25%  {left: 100%; transform: translateX(-100%);}
+    50%  {left: 0; transform: translateX(0);}
+    75%  {left: 100%; transform: translateX(-100%);}
+    100% {top: calc-val(30); left: 0; transform: translateX(0);}
+}
+
+// Right bat in the aside section
+@keyframes bat-move-right {
+    0%   {top: 0; right: 0;}
+    25%  {right: 100%; transform: translateX(100%);}
+    50%  {right: 0; transform: translateX(0);}
+    75%  {right: 100%; transform: translateX(100%);}
+    100% {top: calc-val(30); right: 0; transform: translateX(0);}
+}
+
+
+// Header notification icon animation
+@keyframes hdr-notification {
+    0% {transform: rotate(5deg);}
+    25%  {transform: rotate(0deg);}
+    50%  {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
+// User-info section animation
+@keyframes user-info-transform {
+    from {
+        transform: translateY(-100%);
+    } to {
+        transform: translateY(0);
+    }
+}

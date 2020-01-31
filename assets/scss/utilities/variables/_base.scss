@@ -1,0 +1,38 @@
+// Paths ---------------------------
+$fonts-folder: "../assets/fonts";
+$images-folder: "../assets/img/";
+
+// Fonts ---------------------------
+$font-primary: "Roboto-Light", serif;
+$font-secondary: "Roboto-LightItalic", serif;
+$font-tertiary: "Roboto-Bold", serif;
+$font-medium: "Roboto-Medium", serif;
+
+$font-b-reg: "BebasNeue-Regular", serif;
+$font-b-thin: "BebasNeue-Thin", serif;
+
+$font-icons: "icomoon-kodeist";
+
+// Text ---------------------------
+$font-bs: 16px;
+$font-lg: 15px;
+$font-md: 14px;
+$font-sm: 13px;
+
+// Container
+$cont-width: 1070px;
+$cont-padding: 20px;
+
+// Resolutions ---------------------------
+$screen-xl: 1440px;
+$screen-lg: 1280px;
+$screen-md: 1024px;
+$screen-sm: 768px;
+$screen-xs: 480px;
+$screen-xxs: 360px;
+
+// Multiply size values for all devices
+$mlp-lg: 0.9;
+$mlp-md: 0.8;
+$mlp-sm: 0.7;
+$mlp-xs: 0.6;

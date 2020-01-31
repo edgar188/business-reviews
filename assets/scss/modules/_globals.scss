@@ -1,0 +1,102 @@
+// Main container
+.container {
+    width: 100%;
+    max-width: $cont-width;
+    padding-left: $cont-padding;
+    padding-right: $cont-padding;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sect-cont-wrap {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+// Section container
+.sect-cont {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+// Container for inner sections
+.inner-cont {
+    width: 100%;
+    padding-left: 105px;
+    padding-right: 105px;
+}
+
+.head-secondary {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-family: $font-secondary;
+}
+
+.head-tertiary {
+    font-size: 1.17em;
+    text-transform: capitalize;
+    font-family: $font-secondary;
+}
+
+// item align to center
+.centered-axis-xy {
+    @include position(50%, null, null, 50%);
+    transform: translate(-50%, -50%);
+}
+
+// Elements align to center with flexbox
+.alg-center {
+    @include dsp-flex(null, null, center);
+}
+
+// Flex direction column
+.flx-dir-col {
+    @include dsp-flex(wrap, null, null, column);
+}
+
+// Flex-wrap
+.flx-wrap {
+    @include dsp-flex(wrap);
+}
+
+// Validation messages (success, warning, error)
+@each $key, $val in $valid-msg-colors {
+    .valid-msg-#{$key} {
+        font-size: 0.875em;
+        font-family: $font-primary;
+        text-transform: lowercase;
+        color: $val;
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.active {
+    color: $color-text-primary;
+    cursor: default;
+    &:hover {
+      opacity: $opacity-default;
+    }
+}
+
+// Floats
+@each $key,$val in $resolutions {
+  @media (min-width: $val) {
+      // Alignment
+      .float-#{$key}-left {
+          float: left;
+      }
+      .float#{$key}-right {
+          float: right;
+      }
+  }
+}
+
+// Float fixes
+.clear-after {
+  @include clear-after;
+}

@@ -1,0 +1,20 @@
+header {
+    padding-top: 71px;
+    nav > ul {
+        @include dsp-flex;
+        font-size: 1em;
+        text-transform: capitalize;
+        color: $color-light;
+        font-family: $font-medium;
+        & > li {
+            padding-right: 40px;
+            &:last-of-type {
+                padding-right: unset;
+            }
+        }
+    }
+}
+.hdr {
+    @include dsp-flex(wrap, space-between, baseline);
+}
+

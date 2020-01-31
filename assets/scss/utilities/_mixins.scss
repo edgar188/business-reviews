@@ -1,0 +1,57 @@
+@mixin font-face($font-name, $font-face-name, $font-style, $font-weight) {
+  $file-path: $fonts-folder +'/'+ $font-name;
+  @font-face {
+    font-family: $font-face-name;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: url($file-path + ".eot");
+    src: url($file-path + ".eot?#iefix") format('embedded-opentype'),
+        url($file-path + ".woff") format('woff'),
+        url($file-path + ".ttf") format('truetype'),
+        url($file-path + ".svg") format('svg');
+  }
+}
+
+@mixin bg-img($image: null, $repeat: null, $size: null, $color: null, $position: null) {
+    @if ($image) {
+      background-image: url($images-folder + $image);
+    }
+    background-color: $color;
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $position;
+}
+
+@mixin position($top: null, $right: null, $bottom: null, $left: null, $pos: absolute) {
+  position: $pos;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin dsp-flex($wrap: null, $just-cont: null, $aln-itm: null, $direction: null, $aln-cont: null) {
+  display: flex;
+  flex-wrap: $wrap;
+  flex-direction: $direction;
+  justify-content: $just-cont;
+  align-items: $aln-itm;
+  align-content: $aln-cont;
+}
+
+@mixin ofl-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin clear-after {
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+
+

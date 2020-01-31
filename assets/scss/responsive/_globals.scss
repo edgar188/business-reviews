@@ -1,0 +1,108 @@
+// @media (max-width: map-get($resolutions, xl)) {
+//     .inner-cont {
+//         padding-left: 50px;
+//         padding-right: 50px;
+//     }
+// }
+
+// @media (max-width: map-get($resolutions, lg)) {
+//     // ----------------------- Buttons -----------------------
+//     .btn-primary {
+//         padding: round(12px * map-get($mlp-values, lg)) round(25px * map-get($mlp-values, lg));
+//     }
+
+//     .btn-secondary {
+//         padding: round(8px * map-get($mlp-values, lg)) round(25px * map-get($mlp-values, lg));
+//     }
+
+//     .btn-default {
+//         padding: round(10px * map-get($mlp-values, lg)) round(35px * map-get($mlp-values, lg));
+//     }
+
+//     // ----------------------- Global classes -----------------------
+//     .inner-cont {
+//         padding-left: 35px;
+//         padding-right: 35px;
+//     }
+
+//     .mark-top {
+//         width: 15px;
+//         height: 15px;
+//         font-size: 13px;
+//         bottom: 8px;
+//         left: 14px;
+//     }
+// }
+
+// @media (max-width: map-get($resolutions, md)) {
+//     .btn-primary {
+//         padding: 10px 16px;
+//     }
+
+//     .btn-default {
+//         padding: 8px 16px;
+//     }
+
+//     .btn-secondary {
+//         padding: 6px 12px;
+//     }
+    
+//     .inner-cont {
+//         padding-left: 30px;
+//         padding-right: 30px;
+//     }
+
+//     .mark-top {
+//         width: 13px;
+//         height: 13px;
+//         font-size: 12px;
+//         bottom: 8px;
+//         left: 13px;
+//     }
+// }
+
+// @media (max-width: map-get($resolutions, sm)) {
+//     .btn-primary {
+//         padding: 6px 12px;
+//     }
+
+//     .btn-default {
+//         padding: 8px 12px;
+//     }
+
+//     .btn-tertiary {
+//         padding: 5px 10px;
+//     }
+
+//     .inner-cont {
+//         padding-left: 20px;
+//         padding-right: 20px;
+//     }
+// }
+
+// @media (max-width: map-get($resolutions, xs)) {
+//     .btn-primary {
+//         padding: 4px 8px;
+//     }
+
+//     .btn-default {
+//         padding: 6px 10px;
+//     }
+
+//     .sect-cont-wrap {
+//         padding-top: 15px;
+//         padding-bottom: 15px;
+//     }
+
+//     .sect-cont {
+//         padding-top: 20px;
+//         padding-bottom: 20px;
+//     }
+// }
+
+// @media (max-width: map-get($resolutions, xxs)) {
+//     .inner-cont {
+//         padding-left: 10px;
+//         padding-right: 10px;
+//     }
+// }

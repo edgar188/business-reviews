@@ -1,0 +1,43 @@
+// Color Usage ---------------------------
+$color-light: #fff;
+$color-dark: #000;
+
+// Text Base Colors ---------------------------
+$color-text-primary: #1E272E;
+$color-text-secondary: #B2B2B2;
+$color-text-custom :#0796DD;
+
+// Font-icon base Colors ---------------------------
+$color-icon-primary: #EAEBEC;
+
+// Background Base Colors ---------------------------
+$color-bg-primary: #F4F6F6;
+$color-bg-secondary: #E64A19;
+$color-bg-danger: #E2424E;
+$color-bg-line: #169CDF;
+
+$btn-colors: (
+    primary: #0796DD,
+    secondary: #0788C8,
+    tertiary: #31B67F,
+    active: #72B7D9
+);
+
+$btn-animation-colors: (
+    primary: blue,
+    secondary: orange,
+    tertiary: crimson,
+);
+
+$valid-msg-colors: (
+    success: green,
+    warning: goldenrod,
+    error: red
+);
+
+// Border Colors ---------------------------
+$color-br-primary: #202426;
+$color-br-secondary: #169291;
+
+// Gradients ---------------------------
+$ln-gr-primary: linear-gradient(164deg, #1e8bc3, #44a6d9);

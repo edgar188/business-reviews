@@ -1,0 +1,40 @@
+// Border Radiuses ---------------------------
+$br-default: 4px;
+$br-md: 10px;
+$br-model: 12px;
+$br-lg: 30px;
+$br-rounded: 50%;
+$br-none: 0;
+
+// Transitions ---------------------------
+$trns-duration: .3s;
+$trns-duration-xs: .1s;
+$trns-duration-sm: .5s;
+$trns-duration-md: .5s;
+$trns-duration-lg: 1s;
+$trns-delay: 50ms;
+
+// Animation durations ---------------------------
+$anim-duration: .3s;
+$anim-duration-sm: 3s;
+$anim-duration-md: 6s;
+$anim-duration-lg: 10s;
+
+// Opacities ---------------------------
+$opacity-none: 0;
+$opacity-primary: .7;
+$opacity-secondary: .5;
+$opacity-tertiary: .1;
+$opacity-default: 1;
+
+// Z-index ---------------------------
+$z-index-min: 0;
+$z-index-mid: 10;
+$z-index-max: 100;
+
+// Box Shadow
+$box-shadow-primary: 0px 5px 5px rgba(0, 0, 0, $opacity-tertiary);
+$box-shadow-secondary: 5px 0px 5px rgba(0, 0, 0, $opacity-tertiary);
+$box-shadow-tertiary: 0px 0px 10px rgba(170, 170, 170);
+$box-shadow-tertiary-hover: 5px 10px 10px rgb(170, 170, 170);
+

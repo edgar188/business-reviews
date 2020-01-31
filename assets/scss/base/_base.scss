@@ -1,0 +1,32 @@
+html {
+  position: relative;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  color: $color-text-primary;
+  font-size: map-get($font-sizes, bs);
+  font-family: $font-primary;
+  overflow: hidden;
+  outline: none;
+  word-wrap: break-word;
+  font-weight: 400;
+}
+
+*, *:before, *:after {
+  outline: none;
+  box-sizing: inherit;
+}
+
+a {
+  transition: opacity $trns-duration-sm;
+
+  &:hover {
+    opacity: $opacity-primary;
+  }
+}
+
+
+
