@@ -11,6 +11,10 @@ button {
     &.mw-60 {
         min-width: 60px;
     }
+
+    &.mxw-120 {
+        max-width: 120px;
+    }
 }
 
 // .btn-primary {
@@ -77,7 +81,7 @@ button {
 
 .btn-clear {
     //all: unset;
-    background: unset;
+    background: none;
     border: unset;
     padding: unset;
     &:hover {

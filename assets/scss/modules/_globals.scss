@@ -47,7 +47,12 @@
     transform: translate(-50%, -50%);
 }
 
-// Elements align to center with flexbox
+// Elements horiz align to center with flexbox
+.flx-center {
+    @include dsp-flex(null, center)
+}
+
+// Elements vert. align to center with flexbox
 .alg-center {
     @include dsp-flex(null, null, center);
 }

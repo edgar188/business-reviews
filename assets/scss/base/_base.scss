@@ -9,7 +9,7 @@ body {
   color: $color-text-primary;
   font-size: map-get($font-sizes, bs);
   font-family: $font-primary;
-  overflow: hidden;
+  overflow-x: hidden;
   outline: none;
   word-wrap: break-word;
   font-weight: 400;

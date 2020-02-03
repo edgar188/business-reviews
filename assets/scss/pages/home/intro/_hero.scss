@@ -1,7 +1,7 @@
 .hero {
     margin-top: 100px;
     .owl-carousel {
-        position: initial;
+        position: static;
     }
     
     .owl-dots {
@@ -35,9 +35,15 @@
     color: $color-light;
 }
 
+.hero-img-wrap {
+    & > img {
+        max-width: 100%;
+    }
+}
+
 .hero-arrow {
     @include position(50%);
-    transform: translateY(50%);
+    transform: translateY(-50%);
     padding: 25px;
     border-radius: $br-rounded;
     border: 2px solid $color-highlight;
@@ -68,4 +74,36 @@
     }
 }
 
+.form-search {
+    margin-top: 70px;
+    padding-bottom: 62px;
+    & > input, & > button {
+        max-height: 56px;
+        line-height: 14px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    & > input {
+        width: 100%;      
+        padding-right: 10px;
+        padding-left: 20px;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+        border: 6px solid $color-br-tertiary;
+        border-right: none;
+    }
 
+    & > button {
+        @include ofl-ellipsis;    
+        padding-right: 25px;
+        padding-left: 25px;
+        text-transform: uppercase;
+        font-size: 0.875em;
+        border: 6px solid $color-br-tertiary;
+        border-left: none;
+        border-bottom-right-radius: 25px;
+        border-top-right-radius: 25px;
+        color: $color-light;
+        background-color: $color-highlight;
+    }
+}
