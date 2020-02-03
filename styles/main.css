@@ -2609,8 +2609,8 @@ input::placeholder {
 
 .hero-arrow {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 25%;
+  transform: translateY(-25%);
   padding: 25px;
   border-radius: 50%;
   border: 2px solid #febb18;

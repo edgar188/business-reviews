@@ -42,8 +42,8 @@
 }
 
 .hero-arrow {
-    @include position(50%);
-    transform: translateY(-50%);
+    @include position(25%);
+    transform: translateY(-25%);
     padding: 25px;
     border-radius: $br-rounded;
     border: 2px solid $color-highlight;
