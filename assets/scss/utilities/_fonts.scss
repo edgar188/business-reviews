@@ -1,16 +1,13 @@
 // icomoon-kodeist
 @include font-face('icomoon-kodeist/icomoon-kodeist', $font-icons, normal, 400);
 
-
-@include font-face('BebasNeue/BebasNeue-Regular/BebasNeue-Regular', 'BebasNeue-Regular', normal, 400);
-
-@include font-face('BebasNeue/BebasNeue-Thin/BebasNeue-Thin', 'BebasNeue-Thin', normal, 100);
-
+// Font-Family Regular
+@include font-face('Roboto/Roboto-Regular/Roboto-Regular', 'Roboto-Regular', normal, 400);
+@include font-face('Roboto/Roboto-Light/Roboto-Light', 'Roboto-Light', normal, 300);
+@include font-face('Roboto/Roboto-LightItalic', 'Roboto-LightItalic', normal, 300);
+@include font-face('Roboto/Roboto-Medium/Roboto-Medium', 'Roboto-Medium', normal, 500);
 @include font-face('Roboto/Roboto-Bold/Roboto-Bold', 'Roboto-Bold', normal, 700);
 
-@include font-face('Roboto/Roboto-Light/Roboto-Light', 'Roboto-Light', normal, 300);
-
-@include font-face('Roboto/Roboto-LightItalic', 'Roboto-LightItalic', normal, 300);
-
-@include font-face('Roboto/Roboto-Medium/Roboto-Medium', 'Roboto-Medium', normal, 500);
-
+// Font-Family BebasNeue
+@include font-face('BebasNeue/BebasNeue-Regular/BebasNeue-Regular', 'BebasNeue-Regular', normal, 400);
+@include font-face('BebasNeue/BebasNeue-Thin/BebasNeue-Thin', 'BebasNeue-Thin', normal, 100);

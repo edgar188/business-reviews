@@ -7,25 +7,11 @@
   src: url("../assets/fonts/icomoon-kodeist/icomoon-kodeist.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/icomoon-kodeist/icomoon-kodeist.woff") format("woff"), url("../assets/fonts/icomoon-kodeist/icomoon-kodeist.ttf") format("truetype"), url("../assets/fonts/icomoon-kodeist/icomoon-kodeist.svg") format("svg");
 }
 @font-face {
-  font-family: "BebasNeue-Regular";
+  font-family: "Roboto-Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/BebasNeue/BebasNeue-Regular/BebasNeue-Regular.eot");
-  src: url("../assets/fonts/BebasNeue/BebasNeue-Regular/BebasNeue-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/BebasNeue/BebasNeue-Regular/BebasNeue-Regular.woff") format("woff"), url("../assets/fonts/BebasNeue/BebasNeue-Regular/BebasNeue-Regular.ttf") format("truetype"), url("../assets/fonts/BebasNeue/BebasNeue-Regular/BebasNeue-Regular.svg") format("svg");
-}
-@font-face {
-  font-family: "BebasNeue-Thin";
-  font-style: normal;
-  font-weight: 100;
-  src: url("../assets/fonts/BebasNeue/BebasNeue-Thin/BebasNeue-Thin.eot");
-  src: url("../assets/fonts/BebasNeue/BebasNeue-Thin/BebasNeue-Thin.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/BebasNeue/BebasNeue-Thin/BebasNeue-Thin.woff") format("woff"), url("../assets/fonts/BebasNeue/BebasNeue-Thin/BebasNeue-Thin.ttf") format("truetype"), url("../assets/fonts/BebasNeue/BebasNeue-Thin/BebasNeue-Thin.svg") format("svg");
-}
-@font-face {
-  font-family: "Roboto-Bold";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../assets/fonts/Roboto/Roboto-Bold/Roboto-Bold.eot");
-  src: url("../assets/fonts/Roboto/Roboto-Bold/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto/Roboto-Bold/Roboto-Bold.woff") format("woff"), url("../assets/fonts/Roboto/Roboto-Bold/Roboto-Bold.ttf") format("truetype"), url("../assets/fonts/Roboto/Roboto-Bold/Roboto-Bold.svg") format("svg");
+  src: url("../assets/fonts/Roboto/Roboto-Regular/Roboto-Regular.eot");
+  src: url("../assets/fonts/Roboto/Roboto-Regular/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto/Roboto-Regular/Roboto-Regular.woff") format("woff"), url("../assets/fonts/Roboto/Roboto-Regular/Roboto-Regular.ttf") format("truetype"), url("../assets/fonts/Roboto/Roboto-Regular/Roboto-Regular.svg") format("svg");
 }
 @font-face {
   font-family: "Roboto-Light";
@@ -47,6 +33,27 @@
   font-weight: 500;
   src: url("../assets/fonts/Roboto/Roboto-Medium/Roboto-Medium.eot");
   src: url("../assets/fonts/Roboto/Roboto-Medium/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto/Roboto-Medium/Roboto-Medium.woff") format("woff"), url("../assets/fonts/Roboto/Roboto-Medium/Roboto-Medium.ttf") format("truetype"), url("../assets/fonts/Roboto/Roboto-Medium/Roboto-Medium.svg") format("svg");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/Roboto/Roboto-Bold/Roboto-Bold.eot");
+  src: url("../assets/fonts/Roboto/Roboto-Bold/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto/Roboto-Bold/Roboto-Bold.woff") format("woff"), url("../assets/fonts/Roboto/Roboto-Bold/Roboto-Bold.ttf") format("truetype"), url("../assets/fonts/Roboto/Roboto-Bold/Roboto-Bold.svg") format("svg");
+}
+@font-face {
+  font-family: "BebasNeue-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/BebasNeue/BebasNeue-Regular/BebasNeue-Regular.eot");
+  src: url("../assets/fonts/BebasNeue/BebasNeue-Regular/BebasNeue-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/BebasNeue/BebasNeue-Regular/BebasNeue-Regular.woff") format("woff"), url("../assets/fonts/BebasNeue/BebasNeue-Regular/BebasNeue-Regular.ttf") format("truetype"), url("../assets/fonts/BebasNeue/BebasNeue-Regular/BebasNeue-Regular.svg") format("svg");
+}
+@font-face {
+  font-family: "BebasNeue-Thin";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../assets/fonts/BebasNeue/BebasNeue-Thin/BebasNeue-Thin.eot");
+  src: url("../assets/fonts/BebasNeue/BebasNeue-Thin/BebasNeue-Thin.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/BebasNeue/BebasNeue-Thin/BebasNeue-Thin.woff") format("woff"), url("../assets/fonts/BebasNeue/BebasNeue-Thin/BebasNeue-Thin.ttf") format("truetype"), url("../assets/fonts/BebasNeue/BebasNeue-Thin/BebasNeue-Thin.svg") format("svg");
 }
 @keyframes bat-rotate {
   0% {
@@ -216,7 +223,7 @@ body {
 }
 
 a {
-  transition: opacity 0.5s;
+  transition: opacity 0.3s;
 }
 a:hover {
   opacity: 0.7;
@@ -279,107 +286,12 @@ a:hover {
   content: "";
 }
 
-.mfp-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1042;
-  overflow: hidden;
-  background: #0b0b0b;
-  opacity: 0;
-}
-
-.mfp-wrap {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1043;
-  outline: none !important;
-}
-
-.mfp-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0 8px;
-  box-sizing: border-box;
-}
-
-.mfp-container:before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.mfp-align-top .mfp-container:before {
-  display: none;
-}
-
-.mfp-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0 auto;
-  z-index: 1045;
-  height: 100%;
-}
-
-.mfp-inline-holder .mfp-content {
-  width: 100%;
-  cursor: auto;
-}
-
-.mfp-preloader,
-.mfp-counter {
-  user-select: none;
-}
-
-.mfp-hide {
-  display: none !important;
-}
-
-.mfp-preloader {
-  position: absolute;
-  top: 50%;
-  right: 8px;
-  left: 8px;
-  color: #CCC;
-  width: auto;
-  text-align: center;
-  margin-top: -0.8em;
-  z-index: 1044;
-}
-.mfp-preloader a {
-  color: #CCC;
-}
-.mfp-preloader a:hover {
-  color: #FFF;
-}
-
-.mfp-s-ready .mfp-preloader {
-  display: none;
-}
-
-.mfp-s-error .mfp-content {
-  display: none;
-}
-
-.mfp-close {
-  display: none !important;
-}
-
 header {
   padding-top: 71px;
 }
 header nav > ul {
   display: flex;
+  padding-bottom: 15px;
   font-size: 1em;
   text-transform: capitalize;
   color: #fff;
@@ -390,6 +302,15 @@ header nav > ul > li {
 }
 header nav > ul > li:last-of-type {
   padding-right: unset;
+}
+header nav > ul > li > a.active {
+  color: #febb18;
+  padding-bottom: 13px;
+  border-bottom: 2px solid #febb18;
+  cursor: default;
+}
+header nav > ul > li > a.active:hover {
+  opacity: 1;
 }
 
 .hdr {
@@ -1831,6 +1752,16 @@ button.mw-60 {
   min-width: 60px;
 }
 
+.btn-clear {
+  background: unset;
+  border: unset;
+  padding: unset;
+}
+.btn-clear:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 input.w-100, textarea.w-100, select.w-100 {
   max-width: unset;
   width: 100%;
@@ -2381,13 +2312,13 @@ input.w-100, textarea.w-100, select.w-100 {
 .head-secondary {
   font-size: 1.5em;
   text-transform: capitalize;
-  font-family: "Roboto-LightItalic", serif;
+  font-family: "Roboto-Medium", serif;
 }
 
 .head-tertiary {
   font-size: 1.17em;
   text-transform: capitalize;
-  font-family: "Roboto-LightItalic", serif;
+  font-family: "Roboto-Medium", serif;
 }
 
 .centered-axis-xy {
@@ -2441,14 +2372,6 @@ input.w-100, textarea.w-100, select.w-100 {
 }
 .valid-msg-error::first-letter {
   text-transform: uppercase;
-}
-
-.active {
-  color: #1E272E;
-  cursor: default;
-}
-.active:hover {
-  opacity: 1;
 }
 
 @media (min-width: 1440px) {
@@ -2513,6 +2436,75 @@ input.w-100, textarea.w-100, select.w-100 {
 
 .intro {
   background-image: linear-gradient(164deg, #1e8bc3, #44a6d9);
+}
+
+.hero {
+  margin-top: 100px;
+}
+.hero .owl-carousel {
+  position: initial;
+}
+.hero .owl-dots {
+  display: none;
+}
+
+.hero-item {
+  display: flex;
+}
+
+.hero-text-wrap {
+  width: 42%;
+  margin-top: 40px;
+}
+
+.hero-title {
+  font-size: 5em;
+  text-transform: uppercase;
+  max-height: 280px;
+  padding-left: 15px;
+  overflow: hidden;
+  color: #febb18;
+}
+
+.hero-desc {
+  font-size: 1.75em;
+  text-transform: capitalize;
+  padding-left: 25px;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  padding: 25px;
+  border-radius: 50%;
+  border: 2px solid #febb18;
+}
+.hero-arrow > span {
+  position: absolute;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #febb18;
+  border-bottom: 0;
+}
+.hero-arrow.prev {
+  left: 50px;
+}
+.hero-arrow.prev > span {
+  left: 50%;
+  transform: translate(-25%, -50%) rotate(-45deg);
+  border-right: 0;
+}
+.hero-arrow.next {
+  right: 50px;
+}
+.hero-arrow.next > span {
+  right: 50%;
+  transform: translate(25%, -50%) rotate(45deg);
+  border-left: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

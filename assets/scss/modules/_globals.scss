@@ -75,14 +75,6 @@
     }
 }
 
-.active {
-    color: $color-text-primary;
-    cursor: default;
-    &:hover {
-      opacity: $opacity-default;
-    }
-}
-
 // Floats
 @each $key,$val in $resolutions {
   @media (min-width: $val) {

@@ -21,7 +21,7 @@ body {
 }
 
 a {
-  transition: opacity $trns-duration-sm;
+  transition: opacity $trns-duration;
 
   &:hover {
     opacity: $opacity-primary;

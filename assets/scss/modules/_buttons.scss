@@ -75,15 +75,15 @@ button {
 //     }
 // }
 
-// .btn-clear {
-//     //all: unset;
-//     background: unset;
-//     border: unset;
-//     padding: unset;
-//     &:hover {
-//         cursor: pointer;
-//         opacity: $opacity-primary;
-//     }
-// }
+.btn-clear {
+    //all: unset;
+    background: unset;
+    border: unset;
+    padding: unset;
+    &:hover {
+        cursor: pointer;
+        opacity: $opacity-primary;
+    }
+}
 
 

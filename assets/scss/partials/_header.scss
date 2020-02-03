@@ -2,14 +2,24 @@ header {
     padding-top: 71px;
     nav > ul {
         @include dsp-flex;
+        padding-bottom: 15px;
         font-size: 1em;
         text-transform: capitalize;
         color: $color-light;
-        font-family: $font-medium;
+        font-family: $font-secondary;
         & > li {
             padding-right: 40px;
             &:last-of-type {
                 padding-right: unset;
+            }
+            & > a.active {
+                color: $color-highlight;
+                padding-bottom: 13px;
+                border-bottom: 2px solid $color-highlight;
+                cursor: default;
+                &:hover {
+                    opacity: $opacity-default;
+                }
             }
         }
     }
