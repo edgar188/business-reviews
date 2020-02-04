@@ -1,0 +1,40 @@
+.ctg-link {
+    @include dsp-flex($aln-itm: center);
+    padding: 5px 0px 5px 5px;
+    transition: none;
+    border: $br-none;
+    border-radius: $br-sm;
+    color: $color-text-secondary;
+    font-family: $font-regular-primary;
+    &:hover {
+        color: $color-light;
+        background-color: $color-bg-secondary;
+        box-shadow: $box-shadow-primary;
+        opacity: $opacity-default;
+        .ctg-img-brd {
+            border-color: $color-light;
+        }
+    }
+}
+
+.ctg-img-brd {
+    position: relative;
+    height: 69px;
+    width: 69px;
+    min-width: 69px;
+    border-radius: $br-rounded;
+    border: 1px solid $color-br-primary;
+    & > img {
+        @include center("both");
+        max-width: 40px;
+        max-height: 40px;
+    }
+}
+
+.ctg-txt {
+    max-height: 2.5em;
+    padding-left: 20px;
+    text-transform: capitalize;
+    word-break: break-word;
+    overflow: hidden;
+}

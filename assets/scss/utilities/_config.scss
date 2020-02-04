@@ -1,11 +1,12 @@
 // Screen resolutions
 $resolutions: (
-  xl: $screen-xl,
-  lg: $screen-lg,
-  md: $screen-md,
-  sm: $screen-sm,
+  xxs: $screen-xxs,
   xs: $screen-xs,
-  xxs: $screen-xxs
+  sm: $screen-sm,
+  md: $screen-md,
+  lg: $screen-lg,
+  xl: $screen-xl
+
 ) !default;
 
 // Text font sizes
@@ -38,4 +39,5 @@ $spaces: (
 ) !default;
 
 $grid-cols-count: 12;
-$grid-spacing: 50px;
+$grid-spacing: 20px;
+$grid-spacing-lg: 60px;

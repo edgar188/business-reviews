@@ -1,0 +1,43 @@
+.nw-list {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    & > li {
+        box-shadow: $box-shadow-secondary;
+        & > img {
+            @include w-minmax(100%, 100%, 100%);
+            display: block;
+        }
+        &:hover {
+            box-shadow: $box-shadow-secondary-hv;
+        }
+    }
+}
+
+.nw-txt {
+    padding-top: 29px;
+    padding-right: 34px;
+    padding-bottom: 34px;
+    padding-left: 27px;
+    font-size: 1em;
+    & > h4 {
+        @include ofl-ellipsis;
+        font-family: $font-secondary;
+    }
+
+    & > p {
+        @include line-clamp-ellipsis(2);
+        margin-top: 32px;
+    }
+
+    & > a {
+        @include ofl-ellipsis;
+        display: block;
+        margin-top: 32px;
+        font-family: $font-secondary;
+        text-transform: uppercase;
+        color: $color-link-primary;
+    }
+}
+
+
+

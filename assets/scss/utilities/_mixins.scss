@@ -66,6 +66,13 @@
   text-overflow: ellipsis;
 }
 
+@mixin line-clamp-ellipsis($lines: null) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 @mixin clear-after {
   &::after {
     content: "";
@@ -74,5 +81,9 @@
   }
 }
 
-
+@mixin w-minmax($min: null, $max: null, $width: null) {
+  width: $width;
+  min-width: $min;
+  max-width: $max;
+}
 

@@ -1,0 +1,26 @@
+.prt-list {
+    margin-top: 70px;
+    li {
+        display: inline-block;
+    }
+}
+
+.owl-carousel.owl-drag .owl-item {
+    width: auto !important;
+}
+
+.test {
+    display: inline-block;
+    img {
+        display: block;
+    }
+    & + a {
+        display: none;
+    }
+    // &:hover {
+    //     display: none;
+    //     & + a {
+    //         display: inline-block;
+    //     }
+    // }
+}

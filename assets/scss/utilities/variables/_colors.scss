@@ -4,9 +4,9 @@ $color-dark: #000;
 $color-highlight: #febb18;
 
 // Text Base Colors ---------------------------
-$color-text-primary: #1E272E;
-$color-text-secondary: #B2B2B2;
-$color-text-custom :#0796DD;
+$color-text-primary: #555;
+$color-text-secondary: #999;
+$color-text-tertiary: #359cd1;
 
 // Text Placeholder Colors
 $color-ph-primary:#868686;
@@ -15,10 +15,14 @@ $color-ph-primary:#868686;
 $color-icon-primary: #EAEBEC;
 
 // Background Base Colors ---------------------------
-$color-bg-primary: #F4F6F6;
-$color-bg-secondary: #E64A19;
-$color-bg-danger: #E2424E;
-$color-bg-line: #169CDF;
+
+// $color-bg-primary: #F4F6F6;
+$color-bg-secondary:#359cd1;
+// $color-bg-danger: #E2424E;
+// $color-bg-line: #169CDF;
+
+// Link colors
+$color-link-primary: #1e8bc2;
 
 $btn-colors: (
     primary: #0796DD,
@@ -40,8 +44,8 @@ $valid-msg-colors: (
 );
 
 // Border Colors ---------------------------
-$color-br-primary: #202426;
-$color-br-tertiary: #4badd8;
+$color-br-primary: #e7e7e7;
+$color-br-tertiary: #5aadd8;
 
 // Gradients ---------------------------
 $ln-gr-primary: linear-gradient(164deg, #1e8bc3, #44a6d9);

@@ -1,7 +1,7 @@
 // Border Radiuses ---------------------------
 $br-default: 4px;
+$br-sm: 8px;
 $br-md: 10px;
-$br-model: 12px;
 $br-lg: 30px;
 $br-rounded: 50%;
 $br-none: 0;
@@ -24,7 +24,7 @@ $anim-duration-lg: 10s;
 $opacity-none: 0;
 $opacity-primary: .7;
 $opacity-secondary: .5;
-$opacity-tertiary: .1;
+$opacity-tertiary: .15;
 $opacity-default: 1;
 
 // Z-index ---------------------------
@@ -33,8 +33,6 @@ $z-index-mid: 10;
 $z-index-max: 100;
 
 // Box Shadow
-$box-shadow-primary: 0px 5px 5px rgba(0, 0, 0, $opacity-tertiary);
-$box-shadow-secondary: 5px 0px 5px rgba(0, 0, 0, $opacity-tertiary);
-$box-shadow-tertiary: 0px 0px 10px rgba(170, 170, 170);
-$box-shadow-tertiary-hover: 5px 10px 10px rgb(170, 170, 170);
-
+$box-shadow-primary: 5px 0 10px rgba($color-dark, $opacity-tertiary);
+$box-shadow-secondary: 5px 0 20px rgba(#363636, $opacity-tertiary);
+$box-shadow-secondary-hv: 5px 0 20px rgba(#363636, $opacity-secondary);
