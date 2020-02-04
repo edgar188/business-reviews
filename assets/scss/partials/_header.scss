@@ -10,7 +10,7 @@ header {
         & > li {
             padding-right: 40px;
             &:last-of-type {
-                padding-right: unset;
+                padding-right: 0;
             }
             & > a.active {
                 color: $color-highlight;
@@ -26,5 +26,10 @@ header {
 }
 .hdr {
     @include dsp-flex(wrap, space-between, baseline);
+    & > a {
+        & > img {
+            display: block;
+        }
+    }
 }
 

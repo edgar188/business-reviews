@@ -1,0 +1,13 @@
+.hero {
+    margin-top: 100px;
+    .owl-carousel {
+        position: static;
+    }
+    
+    .owl-dots {
+        display: none;
+    }
+    & > div {
+        position: relative;
+    }
+}

@@ -1,0 +1,63 @@
+.hr-sld-item {
+    @include dsp-flex;
+}
+
+.hr-sld-txt {
+    width: 42%;
+    margin-top: 40px;
+}
+
+.hr-sld-ttl {
+    font-size: 5em;
+    text-transform: uppercase;
+    max-height: 280px;
+    padding-left: 15px;
+    overflow: hidden;
+    color: $color-highlight;
+}
+
+.hr-sld-dsc {
+    font-size: 1.75em;
+    text-transform: capitalize;
+    padding-left: 25px;
+    margin-top: 30px;
+    color: $color-light;
+}
+
+.hr-sld-img {
+    & > img {
+        max-width: 100%;
+    }
+}
+
+.hr-sld-arw {
+    @include center("vertical");
+    padding: 25px;
+    border-radius: $br-rounded;
+    border: 2px solid $color-highlight;
+
+    & > span {
+        @include center("vertical");
+        width: 15px;
+        height: 15px;
+        border: 2px solid $color-highlight;
+        border-bottom: $br-none;
+    }
+
+    &.prev {
+        left: 50px;
+        & > span {
+            left: 50%;
+            transform: translate(-25%, -50%) rotate(-45deg);
+            border-right: $br-none;
+        }
+    }
+    &.next {
+        right: 50px;
+        & > span {
+            right: 50%;
+            transform: translate(25%, -50%) rotate(45deg);
+            border-left: $br-none;
+        }
+    }
+}
