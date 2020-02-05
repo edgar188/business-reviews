@@ -1,10 +1,10 @@
 .hero {
     margin-top: 100px;
     .owl-carousel {
-        position: static;
+        @include position($pos: static);
     }
     
     & > div {
-        position: relative;
+        @include position($pos: relative);
     }
 }

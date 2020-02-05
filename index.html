@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Business-Reviews</title>
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
-    <script src="./assets/js/libs/jquery.min.js"></script>
-    <script async defer src="./assets/js/libs/owlcarousel/owl.carousel.js"></script>
-    <script async defer src="./assets/js/jquery.js"></script>
 </head>
 <body>
     <!--------------------------- Intro ----------------------------->
@@ -44,8 +41,8 @@
         <section class="hero">
             <div>
                 <div class="container">
-                    <ul id="hr-sld" class="owl-carousel owl-theme">
-                        <li class="hr-sld-item">
+                    <div id="hr-sld" class="owl-carousel owl-theme hr-sld-list">
+                        <div class="hr-sld-item">
                             <div class="hr-sld-txt">
                                 <h1 class="hr-sld-ttl">Reviews Ratings Comparisons</h1>
                                 <p class="hr-sld-dsc">Unbiased Reviews That Save You Time and Money</p>
@@ -53,8 +50,8 @@
                             <div class="hr-sld-img">
                                 <img src="./assets/img/hero/computer.png" alt="hero-img"/>
                             </div>
-                        </li>
-                        <li class="hr-sld-item">
+                        </div>
+                        <div class="hr-sld-item">
                             <div class="hr-sld-txt">
                                 <h2 class="hr-sld-ttl">Reviews Ratings Comparisons</h2>
                                 <p class="hr-sld-dsc">Unbiased Reviews That Save You Time and Money</p>
@@ -62,14 +59,14 @@
                             <div class="hr-sld-img">
                                 <img src="./assets/img/hero/computer.png" alt="hero-img"/>
                             </div>
-                        </li>
-                    </ul>
-                    <button class="btn-clear hr-sld-arw prev" id="arrow-prev">
+                        </div>
+                    </div>
+                    <span class="hr-sld-arw prev" id="hr-arrow-prev">
                         <span></span>
-                    </button>
-                    <button class="btn-clear hr-sld-arw next" id="arrow-next">
+                    </span>
+                    <span class="hr-sld-arw next" id="hr-arrow-next">
                         <span></span>
-                    </button>
+                    </span>
                 </div>
             </div>
             <form class="flx-center form-search">
@@ -209,41 +206,60 @@
     <section class="partners">
         <div class="container">
             <h2 class="head-primary prt-hd">our partners</h2>
-            <ul id="prt-sld" class="owl-carousel owl-theme prt-list">
-                <li>
-                    <a href="#" class="test">
+            <div id="prt-sld" class="owl-carousel owl-theme prt-list">
+                <div>
+                    <a href="#" class="prt-link">
                         <img src="./assets/img/partners/ENT.png" alt="ENT" />
-                    </a>
-                    <a href="#">
                         <img src="./assets/img/partners/ENT-effect.png" alt="ENT" />
                     </a>
-                </li>
+                </div>
+                <div>
+                    <a href="#" class="prt-link">
+                        <img src="./assets/img/partners/The_New_York_Times.png" alt="New-York-Times" />        
+                        <img src="./assets/img/partners/The_New_York_Times_effect.png" alt="New-York-Times" />
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="prt-link">
+                        <img src="./assets/img/partners/comparecards.png" alt="Comparecards" />
+                        <img src="./assets/img/partners/comparecards-effect.png" alt="Comparecards" />
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="prt-link">
+                        <img src="./assets/img/partners/MSN.png" alt="MSN" />
+                        <img src="./assets/img/partners/MSN-effect.png" alt="MSN" />
+                    </a>
+                </div>
+            </div>
+                <span class="prt-sld-arw prev" id="prt-arrow-prev">
+                    <span></span>
+                </span>
+                <span class="prt-sld-arw next" id="prt-arrow-next">
+                    <span></span>
+                </span>        
+        </div>
+    </section>
+    <!--------------------------- Posts ----------------------------->
+    <section class="posts">
+        <div class="container">
+            <h2 class="head-primary blg-head">blog posts</h2>
+            <ul class="">
                 <li>
-                    <a href="#" class="test">
-                        <img src="./assets/img/partners/The_New_York_Times.png" alt="" />
-                    </a>
                     <a href="#">
-                        <img src="./assets/img/partners/The_New_York_Times_effect.png" alt="" />
+                        <img src="./assets/img/posts/post-1.png" alt="post-img" />
                     </a>
-                </li>
-                <li>
-                    <a href="#" class="test">
-                        <img src="./assets/img/partners/comparecards.png" alt="" />
-                    </a>
-                    <a href="#">
-                        <img src="./assets/img/partners/comparecards-effect.png" alt="" />
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="test">
-                        <img src="./assets/img/partners/MSN.png" alt="" />
-                    </a>
-                    <a href="#">
-                        <img src="./assets/img/partners/MSN-effect.png" alt="" />
-                    </a>
+                    <div>
+
+                    </div>
                 </li>
             </ul>
         </div>
     </section>
+
+    <!-------------- Javascript files connection  -------------------->
+    <script src="./assets/js/libs/jquery.min.js"></script>
+    <script src="./assets/js/libs/owlcarousel/owl.carousel.js"></script>
+    <script src="./assets/js/jquery.js"></script>
 </body>
 </html>
