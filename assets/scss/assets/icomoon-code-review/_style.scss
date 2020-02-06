@@ -15,65 +15,50 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-archive {
-    &:before {
-        content: $icon-archive;
-    }
-}
-.icon-dashboard {
-    &:before {
-        content: $icon-dashboard;
-    }
-}
-.icon-delete {
-    &:before {
-        content: $icon-delete;
-    }
-}
-.icon-notification {
-    &:before {
-        content: $icon-notification;
-    }
-}
-
-.icon-settings {
-    &:before {
-        content: $icon-settings;
-    }
-}
-
-.icon-statistics {
-    &:before {
-        content: $icon-statistics;
-    }
-}
-
-.icon-plus {
-    &:before {
-        content: $icon-plus;
-    }
-}
-
-.icon-arrow-top { 
-    &:before {
-        content: $icon-arrow-top;
-    }
-}
-
-.icon-close { 
-    &:before {
-        content: $icon-close;
-    }
-}
-
-.icon-nav { 
-    &:before {
+.icon-nav {
+    &::before {
         content: $icon-nav;
     }
 }
 
-.icon-users { 
-    &:before {
-        content: $icon-users;
+.icon-date {
+    &::before {
+        content: $icon-date;
     }
 }
+
+.icon-bank {
+    &::before {
+        content: $icon-bank;
+    }
+}
+
+
+.icon-rss {
+    &::before {
+        content: $icon-rss;
+    }
+}
+
+.icon-google-plus {
+    &::before {
+        content: $icon-google-plus;
+    }
+}
+
+.icon-facebook {
+    &::before {
+        content: $icon-facebook;
+    }
+}
+
+.icon-twitter {
+    &::before {
+        content: $icon-twitter;
+    }
+}
+
+
+
+
+

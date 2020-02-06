@@ -1,10 +1,10 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "icomoon-kodeist";
+  font-family: "Icomoon-Bs-Rev";
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/icomoon-kodeist/icomoon-kodeist.eot");
-  src: url("../assets/fonts/icomoon-kodeist/icomoon-kodeist.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/icomoon-kodeist/icomoon-kodeist.woff") format("woff"), url("../assets/fonts/icomoon-kodeist/icomoon-kodeist.ttf") format("truetype"), url("../assets/fonts/icomoon-kodeist/icomoon-kodeist.svg") format("svg");
+  src: url("../assets/fonts/Icomoon-Bs-Rev/Icomoon-Bs-Rev.eot");
+  src: url("../assets/fonts/Icomoon-Bs-Rev/Icomoon-Bs-Rev.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Icomoon-Bs-Rev/Icomoon-Bs-Rev.woff") format("woff"), url("../assets/fonts/Icomoon-Bs-Rev/Icomoon-Bs-Rev.ttf") format("truetype"), url("../assets/fonts/Icomoon-Bs-Rev/Icomoon-Bs-Rev.svg") format("svg");
 }
 @font-face {
   font-family: "Roboto-Regular";
@@ -135,7 +135,7 @@ a:hover {
 
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon-kodeist" !important;
+  font-family: "Icomoon-Bs-Rev" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -146,48 +146,32 @@ a:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-archive:before {
-  content: "";
-}
-
-.icon-dashboard:before {
-  content: "";
-}
-
-.icon-delete:before {
-  content: "";
-}
-
-.icon-notification:before {
-  content: "";
-}
-
-.icon-settings:before {
-  content: "";
-}
-
-.icon-statistics:before {
-  content: "";
-}
-
-.icon-plus:before {
+.icon-nav::before {
   content: "";
 }
 
-.icon-arrow-top:before {
-  content: "";
+.icon-date::before {
+  content: "";
 }
 
-.icon-close:before {
-  content: "";
+.icon-bank::before {
+  content: "";
 }
 
-.icon-nav:before {
-  content: "";
+.icon-rss::before {
+  content: "";
 }
 
-.icon-users:before {
-  content: "";
+.icon-google-plus::before {
+  content: "";
+}
+
+.icon-facebook::before {
+  content: "";
+}
+
+.icon-twitter::before {
+  content: "";
 }
 
 /*
@@ -1841,22 +1825,52 @@ header nav > ul > li > a.active:hover {
   margin-bottom: 60px;
 }
 
-button {
-  transition: 0.1s;
-}
-button:hover {
+.btn {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   cursor: pointer;
-  opacity: 0.7;
+  padding: 18px 30px;
+  font-size: 1.125em;
+  transition: 0.1s ease-in-out;
 }
-button.w-100 {
-  max-width: unset;
+.btn.w-100 {
+  max-width: 100%;
   width: 100%;
 }
-button.mw-60 {
+.btn.minw-60 {
   min-width: 60px;
 }
-button.mxw-120 {
+.btn.minw-220 {
+  min-width: 220px;
+}
+.btn.maxw-120 {
   max-width: 120px;
+}
+.btn.maxw-220 {
+  max-width: 220px;
+}
+.btn.maxw-full {
+  max-width: 100%;
+}
+.btn.filled {
+  background-image: linear-gradient(164deg, #1e8bc3, #44a6d9);
+  color: #fff;
+}
+.btn.light {
+  background-color: #fff;
+  color: #868686;
+}
+.btn.br-lg {
+  border: 6px solid #e7e7e7;
+  border-radius: 50px;
+}
+.btn.br-none {
+  border: none;
+  border-radius: 50px;
+}
+.btn:hover {
+  opacity: 0.7;
 }
 
 .btn-clear {
@@ -2647,9 +2661,6 @@ input::placeholder {
   border-right: none;
 }
 .form-search > button {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   padding-right: 25px;
   padding-left: 25px;
   text-transform: uppercase;
@@ -2798,7 +2809,7 @@ input::placeholder {
   display: block;
 }
 .prt-link > img {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .prt-link > img:first-of-type {
   position: relative;
@@ -2836,7 +2847,7 @@ input::placeholder {
   border-bottom: 0;
 }
 .prt-sld-arw.prev {
-  left: calc(-7.5% - 30px);
+  left: calc(-7.5% - 20px);
 }
 .prt-sld-arw.prev > span {
   left: 50%;
@@ -2844,12 +2855,92 @@ input::placeholder {
   border-right: 0;
 }
 .prt-sld-arw.next {
-  right: calc(-7.5% - 30px);
+  right: calc(-7.5% - 20px);
 }
 .prt-sld-arw.next > span {
   right: 50%;
   transform: translate(25%, -50%) rotate(45deg);
   border-left: 0;
+}
+
+.blogs {
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 94px;
+}
+
+.blg-head {
+  text-align: center;
+  color: #359cd1;
+}
+
+.blg-btn-wrap {
+  text-align: center;
+  margin-top: 40px;
+}
+.blg-btn-wrap button {
+  text-transform: uppercase;
+}
+
+.blg-list {
+  margin-top: 80px;
+}
+.blg-list > li {
+  box-shadow: 5px 0 20px rgba(54, 54, 54, 0.15);
+}
+.blg-list > li > a {
+  display: block;
+}
+.blg-list > li img {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  display: block;
+}
+.blg-list > li:hover {
+  box-shadow: 5px 0 20px rgba(54, 54, 54, 0.5);
+}
+
+.blg-txt-wrap {
+  padding-top: 24px;
+  padding-right: 28px;
+  padding-bottom: 28px;
+  padding-left: 28px;
+  font-family: "Roboto-Regular", serif;
+  line-height: 1.375em;
+}
+.blg-txt-wrap > span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  font-size: 0.875em;
+  font-family: "Roboto-Light", serif;
+}
+.blg-txt-wrap > span > i {
+  position: relative;
+  top: 5px;
+  padding-right: 10px;
+  font-size: 22px;
+  color: #000;
+}
+.blg-txt-wrap > a {
+  display: block;
+  padding-top: 24px;
+}
+.blg-txt-wrap > a > h4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-family: "Roboto-Medium", serif;
+}
+.blg-txt-wrap > p {
+  padding-top: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -71,7 +71,7 @@
             </div>
             <form class="flx-center form-search">
                 <input placeholder="Search for a company" class="mxw-400" />
-                <button class="mxw-120">search</button>
+                <button class="btn maxw-120">search</button>
             </form>
         </section>
     </section>
@@ -240,26 +240,71 @@
                 </span>        
         </div>
     </section>
-    <!--------------------------- Posts ----------------------------->
-    <section class="posts">
+    <!--------------------------- Blog Posts ----------------------------->
+    <section class="blogs">
         <div class="container">
             <h2 class="head-primary blg-head">blog posts</h2>
-            <ul class="">
-                <li>
+            <ul class="cols-md-3 cols-sm-2 cols-mb-lg blg-list">
+                <li class="col-md-4 col-sm-6">
                     <a href="#">
-                        <img src="./assets/img/posts/post-1.png" alt="post-img" />
+                        <img src="./assets/img/blogs/post-1.png" alt="post-img" />
                     </a>
-                    <div>
-
+                    <div class="blg-txt-wrap">
+                        <span>
+                           <i class="icon-date"></i>21 January 2016
+                         </span>
+                         <a href="#">
+                            <h4>The Complete Guide to Credit Card Processing Rates & Fees</h4>
+                         </a>
+                        <p>Credit card processing fees are extensive, complicated, and somewhat overwhelming. Nevertheless, you have to pay them if you want to process credit cards through your business. Rather than paying these charges blindly, you might as well make an</p>
+                    </div>
+                </li>
+                <li class="col-md-4 col-sm-6">
+                    <a href="#">
+                        <img src="./assets/img/blogs/post-2.png" alt="post-img" />
+                    </a>
+                    <div class="blg-txt-wrap">
+                        <span>
+                           <i class="icon-date"></i>31 July 2016
+                         </span>
+                         <a href="#">
+                            <h4>The 5 Best Small Business Credit Card Processing Companies</h4>
+                         </a>
+                        <p>Unless your small business consists of running a lemonade stand on the corner of your street, sooner or later you're going to need to accept credit and debit cards as payment in order to compete in today's marketplace. Customers are increasingly</p>
+                    </div>
+                </li>
+                <li class="col-md-4 col-sm-6">
+                    <a href="#">
+                        <img src="./assets/img/blogs/post-3.png" alt="post-img" />
+                    </a>
+                    <div class="blg-txt-wrap">
+                        <span>
+                           <i class="icon-date"></i>5 November 2014
+                         </span>
+                         <a href="#">
+                            <h4>Top 7 Square Alternatives</h4>
+                         </a>
+                        <p>Unless your small business consists of running a lemonade stand on the corner of your street, sooner or later you're going to need to accept credit and debit cards as payment in order to compete in today's marketplace. Customers are increasingly</p>
                     </div>
                 </li>
             </ul>
+            <div class="blg-btn-wrap">
+                <button class="btn filled br-lg minw-220 maxw-full">load more</button>
+            </div>
         </div>
     </section>
-
+    <!--------------------------- Contacts ----------------------------->
+    <section class="contacts">
+        <div id="map" class="cnt-map" style="min-height: 670px;"></div>
+        <div class="container">
+           <div></div>
+        </div>
+    </section>
     <!-------------- Javascript files connection  -------------------->
     <script src="./assets/js/libs/jquery.min.js"></script>
     <script src="./assets/js/libs/owlcarousel/owl.carousel.js"></script>
+    <script src="./assets/js/index.js"></script>
     <script src="./assets/js/jquery.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
 </body>
 </html>

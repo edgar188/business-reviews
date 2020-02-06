@@ -1,17 +1,9 @@
-function onNavBtn() {
-    var asideNode = document.getElementById("aside");
-
-    asideNode.className === "sect-cont open" 
-        ? asideNode.className = "sect-cont close"
-        : asideNode.className = "sect-cont open";
+function initMap() {
+    // The location of Uluru
+    var uluru = {lat: -25.344, lng: 131.036};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 4, center: uluru});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: uluru, map: map});
 }
-
-// Settings form input field onchange handler
-function onChangeVal(node) {
-    var label = node.nextElementSibling;
-    
-    node.value 
-        ? label.setAttribute("class", "label-active")
-        : label.removeAttribute("class");
-}
-

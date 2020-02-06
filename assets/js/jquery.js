@@ -13,7 +13,7 @@ $(document).ready(function() {
     // Partners slider handler
     $('#prt-sld').owlCarousel({
         loop: true,
-        items:4,
+        items: 4,
         margin: 50,
         dots: false,
         nav: true,
@@ -21,16 +21,15 @@ $(document).ready(function() {
         autoWidth: true,
         lazyLoad: true,
         autoplay: true,
-        smartSpeed: 1500,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
             480: {
-                items:2
+                items: 2
             },
-            1024:{
-                items:3
+            1024: {
+                items: 3
             }
         }
     })

@@ -17,8 +17,7 @@
         border-right: none;
     }
 
-    & > button {
-        @include ofl-ellipsis;    
+    & > button {  
         padding-right: 25px;
         padding-left: 25px;
         text-transform: uppercase;

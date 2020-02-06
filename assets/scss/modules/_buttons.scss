@@ -1,83 +1,58 @@
-button {
-    transition: $trns-duration-xs;
-    &:hover {
-        cursor: pointer;
-        opacity: $opacity-primary;
-    }
+.btn {
+    @include ofl-ellipsis;
+    cursor: pointer;
+    padding: 18px 30px;
+    font-size: 1.125em;
+    transition: $trns-duration-xs ease-in-out;
+
     &.w-100 {
-        max-width: unset;
+        max-width: 100%;
         width: 100%;
     }
-    &.mw-60 {
+    &.minw-60 {
         min-width: 60px;
     }
 
-    &.mxw-120 {
+    &.minw-220 {
+        min-width: 220px;
+    }
+
+    &.maxw-120 {
         max-width: 120px;
     }
+
+    &.maxw-220 {
+        max-width: 220px;
+    }
+
+    &.maxw-full {
+        max-width: 100%;
+    }
+
+    &.filled {
+        background-image: linear-gradient(164deg, #1e8bc3, #44a6d9);
+        color: $color-light;
+    }
+
+    &.light {
+        background-color: $color-light;
+        color: $color-text-tertiary;
+    }
+
+    &.br-lg {
+        border: 6px solid $color-br-primary;
+        border-radius: 50px;
+    }
+
+    &.br-none {
+        border: none;
+        border-radius: 50px;
+    }
+
+    &:hover {
+        opacity: $opacity-primary;
+    }
 }
-
-// .btn-primary {
-//     @include ofl-ellipsis;
-//     padding: 12px 25px;
-//     max-width: 185px;
-//     font-size: 1em;
-//     text-transform: lowercase;
-//     font-family: $font-secondary;
-//     color: $color-light;
-//     background-color: map-get($btn-colors, primary);
-//     border: $br-none;
-//     border-radius: $br-default;
-// }
-
-// .btn-secondary {
-//     @include ofl-ellipsis;
-//     padding: 8px 25px;
-//     max-width: 185px;
-//     font-size: 0.875em;
-//     text-transform: lowercase;
-//     font-family: $font-secondary;
-//     color: map-get($btn-colors, secondary);
-//     background-color: $color-light;
-//     border: 2px solid map-get($btn-colors, secondary);
-//     border-radius: $br-md;
-// }
-
-// .btn-tertiary {
-//     @include ofl-ellipsis;
-//     padding: 5px 20px;
-//     max-height: 25px;
-//     text-transform: capitalize;
-//     font-size: 0.75em;
-//     font-family: $font-secondary;
-//     border: $br-none;
-//     border-radius: $br-model;
-//     color: $color-light;
-//     background-color: map-get($btn-colors, tertiary);
-// }
-
-// .btn-default {
-//     @include ofl-ellipsis;
-//     padding: 10px 35px;
-//     max-width: 220px;
-//     font-size: 0.875em;
-//     text-transform: capitalize;
-//     font-family: $font-secondary;
-//     color: $color-text-primary;
-//     background-color: $color-light;
-//     border: $br-none;
-//     box-shadow: $box-shadow-primary;
-//     border-radius: $br-default;
-// }
-
-// .btn-active {
-//     background-color: map-get($btn-colors, active);
-//     color: $color-light;
-//     &:hover {
-//         opacity: $opacity-default;
-//         cursor: default;
-//     }
-// }
 
 .btn-clear {
     //all: unset;
