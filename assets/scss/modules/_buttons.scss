@@ -1,7 +1,7 @@
 .btn {
     @include ofl-ellipsis;
     cursor: pointer;
-    padding: 18px 30px;
+    padding: 18px 70px;
     font-size: 1.125em;
     transition: $trns-duration-xs ease-in-out;
 
@@ -13,8 +13,8 @@
         min-width: 60px;
     }
 
-    &.minw-220 {
-        min-width: 220px;
+    &.minw-120 {
+        min-width: 120px;
     }
 
     &.maxw-120 {

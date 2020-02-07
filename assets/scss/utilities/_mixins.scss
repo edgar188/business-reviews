@@ -51,10 +51,10 @@
   }
 }
 
-@mixin dsp-flex($wrap: null, $just-cont: null, $aln-itm: null, $direction: null, $aln-cont: null) {
+@mixin dsp-flex($wrap: null, $just-cont: null, $aln-itm: null, $dir: null, $aln-cont: null) {
   display: flex;
   flex-wrap: $wrap;
-  flex-direction: $direction;
+  flex-direction: $dir;
   justify-content: $just-cont;
   align-items: $aln-itm;
   align-content: $aln-cont;

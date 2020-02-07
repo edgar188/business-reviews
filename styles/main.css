@@ -1830,7 +1830,7 @@ header nav > ul > li > a.active:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
-  padding: 18px 30px;
+  padding: 18px 70px;
   font-size: 1.125em;
   transition: 0.1s ease-in-out;
 }
@@ -1841,8 +1841,8 @@ header nav > ul > li > a.active:hover {
 .btn.minw-60 {
   min-width: 60px;
 }
-.btn.minw-220 {
-  min-width: 220px;
+.btn.minw-120 {
+  min-width: 120px;
 }
 .btn.maxw-120 {
   max-width: 120px;
@@ -2941,6 +2941,51 @@ input::placeholder {
   -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.contacts {
+  position: relative;
+  margin-top: 70px;
+  overflow: hidden;
+}
+
+.cnt-map {
+  position: static !important;
+}
+
+.cnt-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 680px;
+  margin: 95px auto;
+}
+.cnt-form > * {
+  margin-bottom: 35px;
+}
+.cnt-form > input {
+  height: 44px;
+  line-height: 44px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 0 20px;
+}
+.cnt-form > textarea {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 20px;
+  min-height: 130px;
+  max-height: 150px;
+}
+
+.cnt-btn-wrap {
+  text-align: center;
+  margin-top: 15px;
+}
+.cnt-btn-wrap > button {
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */

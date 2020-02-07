@@ -1,0 +1,36 @@
+.cnt-form {
+    @include position($pos: relative);
+    @include dsp-flex($dir: column);
+    width: 100%;
+    max-width: 680px;
+    margin: 95px auto;
+
+    & > * {
+        margin-bottom: 35px;
+    }
+    
+    & > input {
+        height: 44px;
+        line-height: 44px;
+        background-color: $color-light;
+        border: none;
+        border-radius: 50px;
+        padding: 0 20px;
+    }
+
+    & > textarea {
+        padding: 15px 20px;
+        border: none;
+        border-radius: 20px;
+        min-height: 130px;
+        max-height: 150px;
+    }
+}
+
+.cnt-btn-wrap {
+    text-align: center;
+    margin-top: 15px;
+    & > button {
+        text-transform: uppercase;
+    }
+}
