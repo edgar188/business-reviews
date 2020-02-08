@@ -1,0 +1,14 @@
+.ftr-bot {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #181818;
+}
+
+
+.ftr-bot-elems {
+    display: flex;
+    justify-content: space-between;
+    & > div {
+        width: 30%;
+    }
+}

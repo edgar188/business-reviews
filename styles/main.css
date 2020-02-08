@@ -419,6 +419,34 @@ header nav > ul > li > a.active:hover {
   display: block;
 }
 
+.ftr-top {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #1f1f1f;
+}
+
+.ftr-top-elems {
+  display: flex;
+  justify-content: space-between;
+}
+.ftr-top-elems > div {
+  width: 30%;
+}
+
+.ftr-bot {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #181818;
+}
+
+.ftr-bot-elems {
+  display: flex;
+  justify-content: space-between;
+}
+.ftr-bot-elems > div {
+  width: 30%;
+}
+
 @media (min-width: 360px) {
   .cols-xxs-12 {
     flex-wrap: wrap;
@@ -2951,6 +2979,14 @@ input::placeholder {
 
 .cnt-map {
   position: static !important;
+}
+.cnt-map::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 155, 212, 0.2);
 }
 
 .cnt-form {
