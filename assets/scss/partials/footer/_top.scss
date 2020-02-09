@@ -1,13 +1,78 @@
 .ftr-top {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #1f1f1f;
+    font-size: 1em;
+    line-height: 1.625em;
+    background-color: $color-bg-primary;
 }
 
 .ftr-top-elems {
-    display: flex;
-    justify-content: space-between;
+    @include dsp-flex(null, space-between);
     & > div {
         width: 30%;
+    }
+}
+
+.ftr-top-head {
+    @include ofl-ellipsis;
+    padding-bottom: 20px;
+    color: $color-highlight;
+}
+
+.ftr-top-about {
+    & > i {
+        display: inline-block;
+        padding: 10px;
+        padding-left: 0;
+        font-size: 1.75em;
+    }
+
+    & > p {
+        display: inline;
+    }
+}
+
+.tweets-list {
+    & > li {
+        @include dsp-flex;
+        & > i {
+            padding-top: 5px;
+            padding-right: 10px;
+            font-size: 1.75em;
+        }
+        & > p > a {
+            color: $color-text-highlight;
+        }
+    }
+}
+
+.ftr-top-form {
+    @include dsp-flex;
+    margin-top: 20px;
+    & > input {
+        padding: 10px;
+        padding-left: 15px;
+        max-height: 56px;
+        width: calc-val(72);
+        max-width: 220px;
+        font-size: 1em;
+        font-family: $font-primary;
+        line-height: 10px;
+        border: $br-none;
+        background-color: #707b81;
+        color: $color-light;
+        &::placeholder {
+            color: $color-light;
+            font-family: $font-primary;
+        }
+    }
+
+    & > button {
+        padding: 10px;
+        border-top: $br-none;
+        border-right: $br-none;
+        border-bottom: $br-none;
+        color: $color-light;
+        background-color: $color-highlight;
     }
 }

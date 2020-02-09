@@ -35,6 +35,13 @@
     text-transform: uppercase;
 }
 
+.head-secondary {
+    font-size: 1.375em;
+    font-family: $font-regular-primary;
+    text-transform: uppercase;
+}
+
+
 // item align to center
 .centered-axis-xy {
     @include position(50%, null, null, 50%);
@@ -62,17 +69,17 @@
 }
 
 // Validation messages (success, warning, error)
-@each $key, $val in $valid-msg-colors {
-    .valid-msg-#{$key} {
-        font-size: 0.875em;
-        font-family: $font-primary;
-        text-transform: lowercase;
-        color: $val;
-        &::first-letter {
-            text-transform: uppercase;
-        }
-    }
-}
+// @each $key, $val in $valid-msg-colors {
+//     .valid-msg-#{$key} {
+//         font-size: 0.875em;
+//         font-family: $font-primary;
+//         text-transform: lowercase;
+//         color: $val;
+//         &::first-letter {
+//             text-transform: uppercase;
+//         }
+//     }
+// }
 
 // Floats
 @each $key,$val in $resolutions {

@@ -39,6 +39,15 @@
         color: $color-text-tertiary;
     }
 
+    &.special {
+        text-transform: uppercase;
+        font-size: 0.875em;
+        font-family: $font-secondary;
+        border-left: none;
+        border-bottom-right-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+
     &.br-lg {
         border: 6px solid $color-br-primary;
         border-radius: 50px;

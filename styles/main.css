@@ -419,9 +419,19 @@ header nav > ul > li > a.active:hover {
   display: block;
 }
 
+.footer {
+  color: #fff;
+}
+.footer a:hover {
+  color: #359cd1;
+  opacity: 1;
+}
+
 .ftr-top {
   padding-top: 50px;
   padding-bottom: 50px;
+  font-size: 1em;
+  line-height: 1.625em;
   background-color: #1f1f1f;
 }
 
@@ -433,18 +443,114 @@ header nav > ul > li > a.active:hover {
   width: 30%;
 }
 
+.ftr-top-head {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: 20px;
+  color: #febb18;
+}
+
+.ftr-top-about > i {
+  display: inline-block;
+  padding: 10px;
+  padding-left: 0;
+  font-size: 1.75em;
+}
+.ftr-top-about > p {
+  display: inline;
+}
+
+.tweets-list > li {
+  display: flex;
+}
+.tweets-list > li > i {
+  padding-top: 5px;
+  padding-right: 10px;
+  font-size: 1.75em;
+}
+.tweets-list > li > p > a {
+  color: #359cd1;
+}
+
+.ftr-top-form {
+  display: flex;
+  margin-top: 20px;
+}
+.ftr-top-form > input {
+  padding: 10px;
+  padding-left: 15px;
+  max-height: 56px;
+  width: calc(100% - 72px);
+  max-width: 220px;
+  font-size: 1em;
+  font-family: "Roboto-Light", serif;
+  line-height: 10px;
+  border: 0;
+  background-color: #707b81;
+  color: #fff;
+}
+.ftr-top-form > input::placeholder {
+  color: #fff;
+  font-family: "Roboto-Light", serif;
+}
+.ftr-top-form > button {
+  padding: 10px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  color: #fff;
+  background-color: #febb18;
+}
+
 .ftr-bot {
   padding-top: 40px;
   padding-bottom: 40px;
+  font-size: 1.125em;
   background-color: #181818;
 }
 
 .ftr-bot-elems {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 .ftr-bot-elems > div {
   width: 30%;
+}
+
+.ftr-bot-services {
+  text-align: left;
+  text-transform: capitalize;
+}
+.ftr-bot-services > li {
+  display: inline-block;
+  padding-right: 5px;
+}
+.ftr-bot-services > li > a::after {
+  content: "/";
+  display: inline;
+  padding-left: 10px;
+  color: #fff;
+}
+.ftr-bot-services > li:last-of-type > a::after {
+  content: none;
+}
+
+.ftr-bot-socials {
+  text-align: right;
+}
+.ftr-bot-socials > li {
+  display: inline-block;
+  padding-left: 20px;
+}
+.ftr-bot-socials > li > a:hover {
+  color: #359cd1;
+  opacity: 1;
+}
+
+.ftr-bot-logo {
+  text-align: center;
 }
 
 @media (min-width: 360px) {
@@ -1889,6 +1995,14 @@ header nav > ul > li > a.active:hover {
   background-color: #fff;
   color: #868686;
 }
+.btn.special {
+  text-transform: uppercase;
+  font-size: 0.875em;
+  font-family: "Roboto-Medium", serif;
+  border-left: none;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
 .btn.br-lg {
   border: 6px solid #e7e7e7;
   border-radius: 50px;
@@ -1923,6 +2037,12 @@ input::placeholder {
   font-size: 1em;
   font-family: "Roboto-Regular", serif;
   color: #868686;
+}
+
+.fld-special {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-right: 0;
 }
 
 .m-1 {
@@ -2473,6 +2593,12 @@ input::placeholder {
   text-transform: uppercase;
 }
 
+.head-secondary {
+  font-size: 1.375em;
+  font-family: "Roboto-Regular", serif;
+  text-transform: uppercase;
+}
+
 .centered-axis-xy {
   position: absolute;
   top: 50%;
@@ -2499,36 +2625,6 @@ input::placeholder {
 .flx-wrap {
   display: flex;
   flex-wrap: wrap;
-}
-
-.valid-msg-success {
-  font-size: 0.875em;
-  font-family: "Roboto-Light", serif;
-  text-transform: lowercase;
-  color: green;
-}
-.valid-msg-success::first-letter {
-  text-transform: uppercase;
-}
-
-.valid-msg-warning {
-  font-size: 0.875em;
-  font-family: "Roboto-Light", serif;
-  text-transform: lowercase;
-  color: goldenrod;
-}
-.valid-msg-warning::first-letter {
-  text-transform: uppercase;
-}
-
-.valid-msg-error {
-  font-size: 0.875em;
-  font-family: "Roboto-Light", serif;
-  text-transform: lowercase;
-  color: red;
-}
-.valid-msg-error::first-letter {
-  text-transform: uppercase;
 }
 
 @media (min-width: 360px) {
@@ -2683,20 +2779,16 @@ input::placeholder {
   width: 100%;
   padding-right: 10px;
   padding-left: 20px;
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 25px;
-  border: 6px solid #5aadd8;
-  border-right: none;
+  border-top: 6px solid #5aadd8;
+  border-bottom: 6px solid #5aadd8;
+  border-left: 6px solid #5aadd8;
 }
 .form-search > button {
   padding-right: 25px;
   padding-left: 25px;
-  text-transform: uppercase;
-  font-size: 0.875em;
-  border: 6px solid #5aadd8;
-  border-left: none;
-  border-bottom-right-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top: 6px solid #5aadd8;
+  border-right: 6px solid #5aadd8;
+  border-bottom: 6px solid #5aadd8;
   color: #fff;
   background-color: #febb18;
 }

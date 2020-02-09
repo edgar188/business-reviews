@@ -13,32 +13,13 @@ $color-text-highlight: #359cd1;
 $color-icon-primary: #EAEBEC;
 
 // Background Base Colors ---------------------------
-
-// $color-bg-primary: #F4F6F6;
+$color-bg-primary: #1f1f1f;
 $color-bg-secondary:#359cd1;
+$color-bg-tertiary: #181818;
 $color-bg-map: rgba(#2e9bd4, 0.2);
 
 // Link colors
 $color-link-primary: #1e8bc2;
-
-$btn-colors: (
-    primary: #0796DD,
-    secondary: #0788C8,
-    tertiary: #31B67F,
-    active: #72B7D9
-);
-
-$btn-animation-colors: (
-    primary: blue,
-    secondary: orange,
-    tertiary: crimson,
-);
-
-$valid-msg-colors: (
-    success: green,
-    warning: goldenrod,
-    error: red
-);
 
 // Border Colors ---------------------------
 $color-br-primary: #e7e7e7;
