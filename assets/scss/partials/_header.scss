@@ -1,25 +1,42 @@
 header {
     padding-top: 70px;
-    nav > ul {
-        @include dsp-flex;
-        padding-bottom: 15px;
-        font-size: 1em;
-        text-transform: capitalize;
-        color: $color-light;
-        font-family: $font-secondary;
-        & > li {
-            padding-right: 40px;
-            &:last-of-type {
-                padding-right: 0;
-            }
-            & > a.active {
-                color: $color-highlight;
-                padding-bottom: 13px;
-                border-bottom: 2px solid $color-highlight;
-                cursor: default;
-                &:hover {
-                    opacity: $opacity-default;
+    nav  {
+        & > ul {
+            @include dsp-flex;
+            padding-bottom: 15px;
+            font-size: 1em;
+            text-transform: capitalize;
+            color: $color-light;
+            font-family: $font-secondary;
+            & > li {
+                padding-right: 40px;
+                &:last-of-type {
+                    padding-right: 0;
                 }
+                & > a.active {
+                    color: $color-highlight;
+                    padding-bottom: 13px;
+                    border-bottom: 2px solid $color-highlight;
+                    cursor: default;
+                    &:hover {
+                        opacity: $opacity-default;
+                    }
+                }
+            }
+            &.show {
+                transform: translateY(0);
+            }
+        }
+
+        & > button {
+            display: none;
+            & > i {
+                font-size: 2em;
+                color: $color-light;
+            }
+            &.nav:hover, 
+            &.close:hover {
+                opacity: 1;
             }
         }
     }

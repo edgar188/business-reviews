@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Business-Reviews</title>
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
-    
+
 </head>
 <body>
 
@@ -20,7 +20,7 @@
                     <img src="./assets/img/logo.png" alt="Logo" />
                 </a>
                 <nav>
-                    <ul>
+                    <ul id="nav-list">
                         <li>
                             <a href="#" class="active">home</a>
                         </li>
@@ -37,6 +37,12 @@
                             <a href="#">blog</a>
                         </li>
                     </ul>
+                    <button class="btn-clear nav" id="btn-nav" onclick="onNavBtn()">
+                        <i class="icon-nav"></i>
+                    </button>
+                    <button class="btn-clear close" id="btn-close" onclick="onNavBtn()">
+                        <i class="icon-close"></i>
+                    </button>
                 </nav>
             </div>
         </header>

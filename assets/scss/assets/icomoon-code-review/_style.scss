@@ -21,6 +21,12 @@
     }
 }
 
+.icon-close {
+    &::before {
+        content: $icon-close;
+    }
+}
+
 .icon-date {
     &::before {
         content: $icon-date;
