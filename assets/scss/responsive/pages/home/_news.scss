@@ -2,4 +2,18 @@
     .news {
         padding-top: 70px;
     }
+
+    .nw-txt {
+        padding: 20px;
+        & > p, 
+        & > a {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: map-get($resolutions, md)) {
+    .news {
+        padding-top: 60px;
+    }
 }

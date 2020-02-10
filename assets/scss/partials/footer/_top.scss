@@ -49,8 +49,11 @@
 .ftr-top-form {
     @include dsp-flex;
     margin-top: 20px;
+    
     & > input {
-        padding: 10px;
+        padding-top: 10px;
+        padding-right: 5px;
+        padding-bottom: 10px;
         padding-left: 15px;
         max-height: 56px;
         width: calc-val(72);
@@ -59,7 +62,7 @@
         font-family: $font-primary;
         line-height: 10px;
         border: $br-none;
-        background-color: #707b81;
+        background-color: $color-bg-special;
         color: $color-light;
         &::placeholder {
             color: $color-light;

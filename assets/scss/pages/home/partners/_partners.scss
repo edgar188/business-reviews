@@ -9,3 +9,10 @@
     text-align: center;
     color: $color-light;
 }
+
+.prt-list {
+    img {
+        max-width: 220px;
+        max-height: 40px;
+    }
+}

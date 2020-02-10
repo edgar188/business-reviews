@@ -3,3 +3,9 @@
         padding-top: 70px;
     }
 }
+
+@media (max-width: map-get($resolutions, md)) {
+    .categories {
+        padding-top: 60px;
+    }
+}

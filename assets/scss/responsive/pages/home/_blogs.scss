@@ -19,3 +19,14 @@
         margin-top: 20px;
     }
 }
+
+@media (max-width: map-get($resolutions, md)) {
+    .blogs {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    
+    .blg-btn-wrap {
+        margin-top: 10px;
+    }
+}    

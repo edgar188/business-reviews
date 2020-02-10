@@ -8,3 +8,22 @@
         margin-top: 50px;
     }
 }
+
+@media (max-width: map-get($resolutions, md)) {
+    .partners {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .prt-list {
+        margin-top: 40px;
+    }
+
+    .prt-sld-arw {
+        padding: 12px;
+        & > span {
+            width: 8px;
+            height: 8px;
+        }
+    }
+}

@@ -4,11 +4,11 @@
   }
 }
 
-// @media (max-width: map-get($resolutions, md)) {
-//   body {
-//     font-size: map-get($font-sizes, md);
-//   }
-// }
+@media (max-width: map-get($resolutions, md)) {
+  body {
+    font-size: map-get($font-sizes, md);
+  }
+}
 
 // @media (max-width: map-get($resolutions, sm)) {
 //   body {

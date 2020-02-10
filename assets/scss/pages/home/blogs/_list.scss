@@ -24,7 +24,6 @@
     line-height: 1.375em;
 
     & > span {
-        @include ofl-ellipsis;
         display: block;
         font-size: 0.875em;
         font-family: $font-primary;

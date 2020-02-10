@@ -41,3 +41,37 @@
         @include position($pos: relative, $right: 20px);
     }      
 }
+
+@media (max-width: map-get($resolutions, md)) {
+    .hero {
+        margin-top: 60px;
+    }
+
+    .hr-sld-img {
+        right: 30px;
+    }
+
+    .form-search {
+        & > input, 
+        & > button {
+            max-height: 45px;
+            line-height: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        & > input {
+            max-width: 40%;
+            border-top: 3px solid $color-br-tertiary;
+            border-bottom: 3px solid $color-br-tertiary;
+            border-left: 3px solid $color-br-tertiary;
+        }
+    
+        & > button {  
+            padding-right: 20px;
+            padding-left: 20px;
+            border-top: 3px solid $color-br-tertiary;
+            border-right: 3px solid $color-br-tertiary;
+            border-bottom: 3px solid $color-br-tertiary;
+        }
+    }
+}

@@ -80,5 +80,8 @@
 .cols-mb-lg {
     & > [class^="col"], & > [class*=" col"] {
         margin-bottom: $grid-spacing-lg;
+        @media (max-width: map-get($resolutions, md)) {
+          margin-bottom: 30px;
+        }
     }
 }

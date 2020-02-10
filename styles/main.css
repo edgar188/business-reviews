@@ -478,7 +478,9 @@ header nav > ul > li > a.active:hover {
   margin-top: 20px;
 }
 .ftr-top-form > input {
-  padding: 10px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
   padding-left: 15px;
   max-height: 56px;
   width: calc(100% - 72px);
@@ -551,6 +553,13 @@ header nav > ul > li > a.active:hover {
 
 .ftr-bot-logo {
   text-align: center;
+}
+.ftr-bot-logo > a {
+  display: block;
+}
+.ftr-bot-logo > a > img {
+  display: inline-block;
+  max-width: 100%;
 }
 
 @media (min-width: 360px) {
@@ -1758,6 +1767,11 @@ header nav > ul > li > a.active:hover {
 .cols-mb-lg > [class^=col], .cols-mb-lg > [class*=" col"] {
   margin-bottom: 60px;
 }
+@media (max-width: 1024px) {
+  .cols-mb-lg > [class^=col], .cols-mb-lg > [class*=" col"] {
+    margin-bottom: 30px;
+  }
+}
 
 .btn {
   white-space: nowrap;
@@ -2697,6 +2711,11 @@ input::placeholder {
   color: #fff;
 }
 
+.prt-list img {
+  max-width: 220px;
+  max-height: 40px;
+}
+
 .prt-list {
   margin-top: 70px;
   max-width: 85%;
@@ -2810,9 +2829,6 @@ input::placeholder {
   line-height: 1.375em;
 }
 .blg-txt-wrap > span {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   display: block;
   font-size: 0.875em;
   font-family: "Roboto-Light", serif;
@@ -2896,6 +2912,11 @@ input::placeholder {
   text-transform: uppercase;
 }
 
+@media (max-width: 1024px) {
+  .btn {
+    padding: 14px 42px;
+  }
+}
 @media (max-width: 1280px) {
   .hero {
     margin-top: 70px;
@@ -2938,14 +2959,60 @@ input::placeholder {
     right: 20px;
   }
 }
+@media (max-width: 1024px) {
+  .hero {
+    margin-top: 60px;
+  }
+
+  .hr-sld-img {
+    right: 30px;
+  }
+
+  .form-search > input, .form-search > button {
+    max-height: 45px;
+    line-height: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .form-search > input {
+    max-width: 40%;
+    border-top: 3px solid #5aadd8;
+    border-bottom: 3px solid #5aadd8;
+    border-left: 3px solid #5aadd8;
+  }
+  .form-search > button {
+    padding-right: 20px;
+    padding-left: 20px;
+    border-top: 3px solid #5aadd8;
+    border-right: 3px solid #5aadd8;
+    border-bottom: 3px solid #5aadd8;
+  }
+}
 @media (max-width: 1280px) {
   .categories {
     padding-top: 70px;
   }
 }
+@media (max-width: 1024px) {
+  .categories {
+    padding-top: 60px;
+  }
+}
 @media (max-width: 1280px) {
   .news {
     padding-top: 70px;
+  }
+
+  .nw-txt {
+    padding: 20px;
+  }
+  .nw-txt > p, .nw-txt > a {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .news {
+    padding-top: 60px;
   }
 }
 @media (max-width: 1280px) {
@@ -2956,6 +3023,24 @@ input::placeholder {
 
   .prt-list {
     margin-top: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .partners {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .prt-list {
+    margin-top: 40px;
+  }
+
+  .prt-sld-arw {
+    padding: 12px;
+  }
+  .prt-sld-arw > span {
+    width: 8px;
+    height: 8px;
   }
 }
 @media (max-width: 1280px) {
@@ -2979,6 +3064,16 @@ input::placeholder {
     margin-top: 20px;
   }
 }
+@media (max-width: 1024px) {
+  .blogs {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .blg-btn-wrap {
+    margin-top: 10px;
+  }
+}
 @media (max-width: 1280px) {
   .contacts {
     margin-top: 40px;
@@ -2986,6 +3081,19 @@ input::placeholder {
 
   .cnt-form {
     margin: 60px auto;
+  }
+}
+@media (max-width: 1024px) {
+  .contacts {
+    margin-top: 30px;
+  }
+
+  .cnt-form {
+    margin: 50px auto;
+  }
+  .cnt-form > input {
+    height: 40px;
+    line-height: 40px;
   }
 }
 @media (max-width: 1280px) {
@@ -3004,9 +3112,38 @@ input::placeholder {
     padding-bottom: 30px;
   }
 }
+@media (max-width: 1024px) {
+  .ftr-top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .ftr-bot {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .ftr-top-form > input {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+  }
+  .ftr-top-form > button {
+    padding: 8px;
+  }
+
+  .ftr-bot-logo > a > img {
+    max-width: 80%;
+  }
+}
 @media (max-width: 1280px) {
   body {
     font-size: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px;
   }
 }
 
