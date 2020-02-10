@@ -1,0 +1,21 @@
+@media (max-width: map-get($resolutions, lg)) {
+    .blogs {
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+
+    .blg-list {
+        margin-top: 70px;
+    }
+
+    .blg-txt-wrap {
+        padding: 15px;
+        & > p {
+            padding-top: 15px;
+        }
+    }
+
+    .blg-btn-wrap {
+        margin-top: 20px;
+    }
+}

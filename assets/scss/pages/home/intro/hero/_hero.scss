@@ -8,3 +8,8 @@
         @include position($pos: relative);
     }
 }
+
+.hr-sld-wrap {
+    display: flex !important;
+}
+

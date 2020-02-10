@@ -17,10 +17,12 @@
 }
 
 .hr-sld-dsc {
-    font-size: 1.75em;
-    text-transform: capitalize;
     padding-left: 25px;
     margin-top: 30px;
+    max-height: 2.5em;
+    overflow: hidden;
+    font-size: 1.75em;
+    text-transform: capitalize;
     color: $color-light;
 }
 

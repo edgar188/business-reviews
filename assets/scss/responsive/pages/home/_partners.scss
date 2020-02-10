@@ -1,0 +1,10 @@
+@media (max-width: map-get($resolutions, lg)) {
+    .partners {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    
+    .prt-list {
+        margin-top: 50px;
+    }
+}

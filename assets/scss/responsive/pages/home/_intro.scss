@@ -1,0 +1,43 @@
+@media (max-width: map-get($resolutions, lg)) {
+    .hero {
+        margin-top: 70px;
+    }
+
+    .hr-sld-list {
+        max-width: 85%;
+        margin: 0 auto;
+    }
+
+    .hr-sld-txt {
+        width: 70%;
+        padding-left: 30px;
+    }
+
+    .hr-sld-ttl {
+        font-size: 3em;
+    }
+
+    .hr-sld-dsc {
+        font-size: 1.5em;
+    }
+
+    .hr-sld-arw {
+        padding: 15px;
+        & > span {
+            width: 10px;
+            height: 10px;
+        }
+
+        &.prev {
+            left: 10px;
+        }
+
+        &.next {
+            right: 10px;
+        }
+    }
+
+    .hr-sld-img {
+        @include position($pos: relative, $right: 20px);
+    }      
+}

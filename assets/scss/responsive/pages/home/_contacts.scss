@@ -1,0 +1,9 @@
+@media (max-width: map-get($resolutions, lg)) {
+    .contacts {
+        margin-top: 40px;
+    }
+
+    .cnt-form {
+        margin: 60px auto;
+    }
+}
