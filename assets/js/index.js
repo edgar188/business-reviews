@@ -10,6 +10,6 @@ function initMap() {
             disableDefaultUI: true
     });
     // The marker, positioned at Uluru
-    // var marker = new google.maps.Marker({position: uluru, map: map});
-    setMapOnAll(null);
+    var marker = new google.maps.Marker({position: uluru, map: map});
+    marker.setMap(null);
 }
