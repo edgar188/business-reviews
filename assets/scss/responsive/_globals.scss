@@ -4,6 +4,12 @@
     }
 }
 
+@media (max-width: map-get($resolutions, md)) {
+    .btn {
+        padding: 10px 32px;
+    }
+}
+
 // @media (max-width: map-get($resolutions, sm)) {
 //     .btn-primary {
 //         padding: 6px 12px;

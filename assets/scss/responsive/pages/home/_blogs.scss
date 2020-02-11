@@ -29,4 +29,18 @@
     .blg-btn-wrap {
         margin-top: 10px;
     }
-}    
+}
+
+@media (max-width: map-get($resolutions, sm)) {
+    .blogs {
+        padding-top: 40px;
+    }
+
+    .blg-list {
+        margin-top: 40px;
+    }
+
+    .blg-txt-wrap {
+        padding: 10px;
+    }
+}

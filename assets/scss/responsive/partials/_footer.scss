@@ -36,3 +36,67 @@
         max-width: 80%;
     }
 }
+
+@media (max-width: map-get($resolutions, sm)) {
+    .ftr-top {
+        padding-top: 0;
+    }
+
+    .ftr-top-elems {
+        flex-direction: column;
+        & > div {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+
+    .tweets-list {
+        & > li {
+            padding-bottom: 5px;
+            & > i {
+                padding-top: 0;
+                font-size: 1.5em;
+            }
+            &:last-of-type {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    .ftr-bot {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .ftr-bot-elems {
+        flex-direction: column;
+        & > div {
+            width: 100%;
+            padding-bottom: 15px;
+        }
+    }
+
+    .ftr-bot-services {
+        text-align: center;
+        & > li {
+            &:last-of-type {
+                padding-right: 0;
+            }
+        }
+    }
+
+    .ftr-bot-logo {
+        img {
+            width: 160px;
+        }
+    }
+
+    .ftr-bot-socials {
+        text-align: center;
+        & > li {
+            &:first-of-type {
+                padding-left: 0;
+            }
+        }
+    }
+}

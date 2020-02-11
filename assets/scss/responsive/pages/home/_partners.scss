@@ -27,3 +27,18 @@
         }
     }
 }
+
+@media (max-width: map-get($resolutions, sm)) {
+    .partners {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .prt-list {
+        width: 100%;
+    }
+
+    .prt-sld-arw {
+        display: none;
+    }
+}

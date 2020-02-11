@@ -21,3 +21,23 @@
         }
     }
 }
+
+@media (max-width: map-get($resolutions, sm)) {
+   
+    .cnt-form {
+        margin: 30px auto;
+        & > * {
+            margin-bottom: 25px;
+        }
+
+        & > input {
+            height: 36px;
+            line-height: 36px;
+        }
+
+        & > textarea {
+            min-height: 120px;
+            max-height: 120px;
+        }
+    }
+}
