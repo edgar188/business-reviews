@@ -77,8 +77,13 @@
 }
 
 @media (max-width: map-get($resolutions, sm)) {
+    .hero {
+        margin-top: 50px;
+    }
+
     .hr-sld-item {
         flex-direction: column;
+        padding-bottom: 20px;
     }
 
     .hr-sld-txt {
@@ -93,17 +98,53 @@
 
     .hr-sld-img {
         position: static;
-        width: 90%;
         margin-left: auto;
         margin-right: auto;
         padding-top: 30px;
+        margin-left: 30px;
+
+        & > img {
+            width: 90%;
+            max-width: 90%;
+            max-height: 250px;
+        }
     }
 
     .form-search {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .hr-sld-arw {
         display: none;
     }
+}
+
+@media (max-width: map-get($resolutions, xs)) {
+    .intro {
+        font-size: 12px;
+    }
+
+    .hr-sld-txt {
+        margin-top: 0;
+    }
+
+    .hr-sld-img {
+        & > img {
+            width: 80%;
+            max-width: 80%;
+        }
+    }
+
+    .form-search {
+
+        & > input {
+            max-width: 70%;
+            height: 38px;
+        }
+
+        & > .btn.special {
+            font-size: 1em;
+        }
+    }
+
 }

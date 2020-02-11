@@ -41,3 +41,26 @@
         }
     }
 }
+
+@media (max-width: map-get($resolutions, xs)) {
+    .cnt-form {
+        width: 90%;
+        & > * {
+            margin-bottom: 15px;
+        }
+        & > input {
+            height: 32px;
+            line-height: 32px;
+        }
+
+        & > textarea {
+            min-height: 100px;
+            max-height: 100px;
+            padding: 10px 20px;
+        }
+    }
+
+    .cnt-btn-wrap {
+        margin-top: 10px;
+    }
+}

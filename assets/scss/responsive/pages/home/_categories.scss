@@ -9,3 +9,24 @@
         padding-top: 60px;
     }
 }
+
+@media (max-width: map-get($resolutions, xs)) {
+    .categories {
+        padding-top: 30px;
+    }
+
+    .ctg-img-brd {
+        height: 60px;
+        width: 60px;
+        min-width: 60px;
+        & > img {
+            max-width: 30px;
+            max-height: 30px;
+        }
+    }
+
+    .ctg-txt {
+        padding-left: 10px;
+    }
+
+}

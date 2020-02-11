@@ -83,5 +83,8 @@
         @media (max-width: map-get($resolutions, md)) {
           margin-bottom: 30px;
         }
+        @media (max-width: map-get($resolutions, xs)) {
+          margin-bottom: 15px;
+        }
     }
 }

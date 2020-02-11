@@ -40,6 +40,7 @@
 @media (max-width: map-get($resolutions, sm)) {
     .ftr-top {
         padding-top: 0;
+        padding-bottom: 20px;
     }
 
     .ftr-top-elems {
@@ -73,6 +74,9 @@
         & > div {
             width: 100%;
             padding-bottom: 15px;
+            &:last-of-type {
+                padding-bottom: 0;
+            }
         }
     }
 
@@ -98,5 +102,29 @@
                 padding-left: 0;
             }
         }
+    }
+}
+
+@media (max-width: map-get($resolutions, xs)) {
+    .ftr-top-elems > div {
+        margin-top: 15px;
+    }
+
+    .ftr-top-form {
+        margin-top: 15px;
+        
+        & > input {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        & > button {
+            padding: 5px;
+        }
+    }
+
+    .ftr-bot {
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }

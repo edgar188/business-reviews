@@ -31,3 +31,14 @@
         padding: 10px;
     }
 }
+
+@media (max-width: map-get($resolutions, xs)) {
+    .news {
+        padding-top: 30px;
+    }
+
+    .nw-list {
+        margin-top: 30px;
+    }
+}
+

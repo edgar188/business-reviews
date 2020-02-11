@@ -4,54 +4,18 @@
     }
 }
 
-@media (max-width: map-get($resolutions, md)) {
+@media (max-width: map-get($resolutions, sm)) {
     .btn {
         padding: 10px 32px;
     }
 }
 
-// @media (max-width: map-get($resolutions, sm)) {
-//     .btn-primary {
-//         padding: 6px 12px;
-//     }
-
-//     .btn-default {
-//         padding: 8px 12px;
-//     }
-
-//     .btn-tertiary {
-//         padding: 5px 10px;
-//     }
-
-//     .inner-cont {
-//         padding-left: 20px;
-//         padding-right: 20px;
-//     }
-// }
-
-// @media (max-width: map-get($resolutions, xs)) {
-//     .btn-primary {
-//         padding: 4px 8px;
-//     }
-
-//     .btn-default {
-//         padding: 6px 10px;
-//     }
-
-//     .sect-cont-wrap {
-//         padding-top: 15px;
-//         padding-bottom: 15px;
-//     }
-
-//     .sect-cont {
-//         padding-top: 20px;
-//         padding-bottom: 20px;
-//     }
-// }
-
-// @media (max-width: map-get($resolutions, xxs)) {
-//     .inner-cont {
-//         padding-left: 10px;
-//         padding-right: 10px;
-//     }
-// }
+@media (max-width: map-get($resolutions, xs)) {
+    .btn {
+        padding: 10px 28px;
+        font-size: 1em;
+        &.br-lg {
+            border-width: 3px;
+        }
+    }
+}
